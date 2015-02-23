@@ -1,0 +1,6 @@
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.Profile\bin\Debug\Orchard.Profile.dll
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.Profile\bin\Debug\Orchard.Profile.pdb
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.Profile\bin\Debug\nunit.framework.dll
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.Profile\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.Profile\obj\Debug\Orchard.Profile.dll
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.Profile\obj\Debug\Orchard.Profile.pdb
