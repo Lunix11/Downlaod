@@ -1,0 +1,5 @@
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\Orchard\bin\Debug\Orchard.exe.config
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\Orchard\bin\Debug\Orchard.exe
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\Orchard\bin\Debug\Orchard.pdb
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\Orchard\obj\Debug\Orchard.exe
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\Orchard\obj\Debug\Orchard.pdb
