@@ -1,0 +1,12 @@
+﻿Name: Contrib.Indexing.Documents
+AntiForgery: enabled
+Author: The Orchard Team
+Website: http://orchardproject.net
+Version: 1.8
+OrchardVersion: 1.8
+Description: Indexing allowed documents (doc, docx, xls ....)
+Features:
+    Contrib.Indexing.Documents:
+        Description: Indexing allowed documents (doc, docx, xls ....)
+		Dependencies: Orchard.MediaLibrary
+		Category: Developer
