@@ -1,0 +1,4 @@
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.dll
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.pdb
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.dll
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.pdb
