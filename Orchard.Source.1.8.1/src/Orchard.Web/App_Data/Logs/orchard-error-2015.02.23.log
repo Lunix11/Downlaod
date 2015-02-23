@@ -1,0 +1,88 @@
+2015-02-23 14:04:34,156 [23] Orchard.ContentManagement.DefaultContentManager - Default - TextExtractionException thrown from IContentHandler by Contrib.Indexing.Documents.Handlers.DocumentsIndexingHandler
+ http://localhost:30321/OrchardLocal/Admin/Indexing/Update/UpaIndex
+TikaOnDotNet.TextExtractionException: Extraction failed. ---> System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at java.util.Arrays.copyOf(Char[] original, Int32 newLength)
+   at java.lang.AbstractStringBuilder.expandCapacity(Int32 )
+   at java.lang.AbstractStringBuilder.ensureCapacityInternal(Int32 )
+   at java.lang.AbstractStringBuilder.append(Char )
+   at java.lang.StringBuffer.append(Char c)
+   at java.io.StringWriter.write(Int32 c)
+   at com.sun.org.apache.xml.internal.serializer.ToTextStream.writeNormalizedChars(Char[] , Int32 , Int32 , Boolean )
+   at com.sun.org.apache.xml.internal.serializer.ToTextStream.characters(Char[] ch, Int32 start, Int32 length)
+   at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerHandlerImpl.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.ContentHandlerDecorator.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.SecureContentHandler.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.ContentHandlerDecorator.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.ContentHandlerDecorator.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.ContentHandlerDecorator.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.SafeContentHandler.access$001(SafeContentHandler , Char[] , Int32 , Int32 )
+   at org.apache.tika.sax.SafeContentHandler.1.write(Char[] , Int32 , Int32 )
+   at org.apache.tika.sax.SafeContentHandler.filter(Char[] , Int32 , Int32 , Output )
+   at org.apache.tika.sax.SafeContentHandler.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.XHTMLContentHandler.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.XHTMLContentHandler.characters(String characters)
+   at org.apache.tika.parser.microsoft.ooxml.XWPFWordExtractorDecorator.processRun(XWPFRun , XWPFParagraph , XHTMLContentHandler , TmpFormatting )
+   at org.apache.tika.parser.microsoft.ooxml.XWPFWordExtractorDecorator.extractParagraph(XWPFParagraph , XHTMLContentHandler )
+   at org.apache.tika.parser.microsoft.ooxml.XWPFWordExtractorDecorator.extractIBodyText(IBody , XHTMLContentHandler )
+   at org.apache.tika.parser.microsoft.ooxml.XWPFWordExtractorDecorator.buildXHTML(XHTMLContentHandler xhtml)
+   at org.apache.tika.parser.microsoft.ooxml.AbstractOOXMLExtractor.getXHTML(ContentHandler handler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.microsoft.ooxml.OOXMLExtractorFactory.parse(InputStream stream, ContentHandler baseHandler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.microsoft.ooxml.OOXMLParser.parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.CompositeParser.parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.CompositeParser.parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.AutoDetectParser.parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context)
+   at TikaOnDotNet.TextExtractor.Extract(Func`2 streamFactory)
+   --- End of inner exception stack trace ---
+   at TikaOnDotNet.TextExtractor.Extract(Func`2 streamFactory)
+   at TikaOnDotNet.TextExtractor.Extract(Byte[] data)
+   at Contrib.Indexing.Documents.Handlers.DocumentsIndexingHandler.GetTextToIndex(DocumentPart part)
+   at Contrib.Indexing.Documents.Handlers.DocumentsIndexingHandler.<.ctor>b__0(IndexContentContext context, DocumentPart part)
+   at Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Indexing(IndexContentContext context, TPart instance) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\ContentManagement\Handlers\ContentHandler.cs:line 180
+   at Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Indexing(IndexContentContext context) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs:line 112
+   at Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Indexing(IndexContentContext context) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\ContentManagement\Handlers\ContentHandler.cs:line 318
+   at Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass89.<Index>b__87(IContentHandler handler) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\ContentManagement\DefaultContentManager.cs:line 792
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-23 14:04:37,800 [7] Orchard.ContentManagement.DefaultContentManager - Default - TextExtractionException thrown from IContentHandler by Contrib.Indexing.Documents.Handlers.DocumentsIndexingHandler
+ (null)
+TikaOnDotNet.TextExtractionException: Extraction failed. ---> System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at java.util.Arrays.copyOf(Char[] original, Int32 newLength)
+   at java.lang.AbstractStringBuilder.expandCapacity(Int32 )
+   at java.lang.AbstractStringBuilder.ensureCapacityInternal(Int32 )
+   at java.lang.AbstractStringBuilder.append(Char )
+   at java.lang.StringBuffer.append(Char c)
+   at java.io.StringWriter.write(Int32 c)
+   at com.sun.org.apache.xml.internal.serializer.ToTextStream.writeNormalizedChars(Char[] , Int32 , Int32 , Boolean )
+   at com.sun.org.apache.xml.internal.serializer.ToTextStream.characters(Char[] ch, Int32 start, Int32 length)
+   at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerHandlerImpl.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.ContentHandlerDecorator.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.SecureContentHandler.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.ContentHandlerDecorator.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.ContentHandlerDecorator.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.ContentHandlerDecorator.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.SafeContentHandler.access$001(SafeContentHandler , Char[] , Int32 , Int32 )
+   at org.apache.tika.sax.SafeContentHandler.1.write(Char[] , Int32 , Int32 )
+   at org.apache.tika.sax.SafeContentHandler.filter(Char[] , Int32 , Int32 , Output )
+   at org.apache.tika.sax.SafeContentHandler.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.XHTMLContentHandler.characters(Char[] ch, Int32 start, Int32 length)
+   at org.apache.tika.sax.XHTMLContentHandler.characters(String characters)
+   at org.apache.tika.parser.microsoft.ooxml.XWPFWordExtractorDecorator.processRun(XWPFRun , XWPFParagraph , XHTMLContentHandler , TmpFormatting )
+   at org.apache.tika.parser.microsoft.ooxml.XWPFWordExtractorDecorator.extractParagraph(XWPFParagraph , XHTMLContentHandler )
+   at org.apache.tika.parser.microsoft.ooxml.XWPFWordExtractorDecorator.extractIBodyText(IBody , XHTMLContentHandler )
+   at org.apache.tika.parser.microsoft.ooxml.XWPFWordExtractorDecorator.buildXHTML(XHTMLContentHandler xhtml)
+   at org.apache.tika.parser.microsoft.ooxml.AbstractOOXMLExtractor.getXHTML(ContentHandler handler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.microsoft.ooxml.OOXMLExtractorFactory.parse(InputStream stream, ContentHandler baseHandler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.microsoft.ooxml.OOXMLParser.parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.CompositeParser.parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.CompositeParser.parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context)
+   at org.apache.tika.parser.AutoDetectParser.parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context)
+   at TikaOnDotNet.TextExtractor.Extract(Func`2 streamFactory)
+   --- End of inner exception stack trace ---
+   at TikaOnDotNet.TextExtractor.Extract(Func`2 streamFactory)
+   at TikaOnDotNet.TextExtractor.Extract(Byte[] data)
+   at Contrib.Indexing.Documents.Handlers.DocumentsIndexingHandler.GetTextToIndex(DocumentPart part)
+   at Contrib.Indexing.Documents.Handlers.DocumentsIndexingHandler.<.ctor>b__0(IndexContentContext context, DocumentPart part)
+   at Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Indexing(IndexContentContext context, TPart instance) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\ContentManagement\Handlers\ContentHandler.cs:line 180
+   at Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Indexing(IndexContentContext context) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs:line 112
+   at Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Indexing(IndexContentContext context) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\ContentManagement\Handlers\ContentHandler.cs:line 318
+   at Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass89.<Index>b__87(IContentHandler handler) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\ContentManagement\DefaultContentManager.cs:line 792
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Orchard\InvokeExtensions.cs:line 17
