@@ -1,0 +1,4 @@
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\MSBuild.Orchard.Tasks\bin\Debug\MSBuild.Orchard.Tasks.dll
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\MSBuild.Orchard.Tasks\bin\Debug\MSBuild.Orchard.Tasks.pdb
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\MSBuild.Orchard.Tasks\obj\Debug\MSBuild.Orchard.Tasks.dll
+C:\Users\achafei\Desktop\Orchard\Orchard.Source.1.8.1\src\Tools\MSBuild.Orchard.Tasks\obj\Debug\MSBuild.Orchard.Tasks.pdb
